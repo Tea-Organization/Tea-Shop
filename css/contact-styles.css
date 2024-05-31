@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1, .title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; 
+    color: #252c30;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+.list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.page-header {
+    background: linear-gradient(rgba(136, 180, 78, .7), rgba(136, 180, 78, .7)), url('../img/contact-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.bgcontainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.below-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 12px;
+}
+
+.b-title {
+    color: #88B44E;
+    font-weight: 600;
+    font-style: italic !important;
+    font-size: 1.25rem !important;
+    align-items: center;
+    text-align: center;
+}
+
+.qoute {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #252c30;
+}
+
+
+.contact-us {
+    width: 100%;
+    display: flex;
+}
+
+.contact-box {
+    width: 33%;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-box .logo-container {
+    padding: 30px;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: #76a44270;
+    display: inline-block;
+}
+
+.contact-box .logo-container i {
+    color: #fff;
+    padding: 20px;
+    font-size: 3em;
+    border-radius: 50%;
+    background-color: #76a442;
+}
+
+
+.form {
+    width: 100%;
+    display: flex;
+}
+
+.form-box {
+    width: 49%;
+    padding: 10px;
+    text-align: center;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form input, .form textarea {
+    margin: 10px 0;
+    padding: 12px;
+    width: 95%;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #88B44E;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+    color: #999;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form input:focus, .form textarea:focus {
+    border-color: #88B44E; 
+    outline: none; 
+    box-shadow: 0 0 10px #88B44E;
+}
+
+.form textarea {
+    resize: vertical; 
+    height: 150px;
+}
+
+.form button {
+    background-color: #88B44E;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #88B44E;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #76a442; 
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 991.98px) { 
+    .contact-us , .form{
+        display: block;
+    }
+    .contact-box , .form-box{
+        width: 100%;
+    } 
+
+
+}
