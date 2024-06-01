@@ -42,8 +42,21 @@
     justify-content: center;
     /* padding-top: 20rem; */
 }
+
+@keyframes slideInDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
 .header .content{
     text-align: center;
+    animation: slideInDown 1s ease-in-out;
 }
 .header .content h3{
     color: #252c30;
@@ -107,22 +120,18 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
-}
-.product .box-container{
     text-align: center;
     padding:3rem 14rem;
+
 }
+
 .product .box-container .box{
     border: var(--primary) solid 1px;
-
 }
 .product .box-container .box h3{
     padding:1rem 0;
     font-size: 2rem;
     color: var(--dark);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 7rem; 
@@ -257,116 +266,3 @@
     justify-content: center;
     box-shadow: 0px 0px 10px gray;   
 }
-
-
-
-
-/* start header style */
-/* .top{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    padding: 2.8rem 15%;
-    border-bottom: var(--border);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background: white;
-}
-  
-    .top .logo img{
-      height: 7rem;
-      width:  8rem;;
-    }
-    
-    .top .navbar a{
-      margin: 10rem 2rem;
-      font-size: 1.6rem;
-      color: var(--dark);
-      font-weight: 600;
-    text-transform: uppercase;
-
-    }
-  
-    .top .navbar a:hover{
-      color: var(--primary);
-    }
-  
-    .top .icons div{
-      color: var(--dark);
-      cursor: pointer;
-      font-size: 1.5rem;
-      margin-left: 2rem;
-
-    }
-  
-    .top .icons div:hover{
-      color: var(--primary);
-      font-size: 1.8rem;
-
-    }
-    #menu-btn{
-      display: none;
-    }
-    .top .teaLogo {
-        position: absolute;
-        padding: 0 15%;
-        width: 170px;
-        height: 135px;
-        top: 0;
-        left: 0;
-    }
-
-
-    @media (max-width:1166px) {
-        .top .icons div{
-            display: none;
-            
-          }
-        .sizeBox{
-            height: 6rem;
-        }
-        .top{
-            padding: 1rem 10rem;
-        }
-        .top .teaLogo img{
-            width: 126px;
-            height: 100px;
-        }
-       
-        #menu-btn{
-          display: inline-block;
-          padding: 8px 16px;
-          font-size: 20px;
-          color: gray;
-          border-radius: 4px;
-          border: silver solid 1px;
-        }
-        .top .navbar{
-          position: absolute;
-          top: 100%;right: -100%;
-          background: #fff;
-          width: 30rem;
-          height: calc(100vh - 9.5rem);
-        }
-        .top .navbar.active{
-          right: 0;
-        }
-        .top .navbar a{
-          color: var(--black);
-          display: block;
-          margin: 1.5rem;
-          padding: 0.5rem;
-          font-size: 2rem;
-        }
-        
-      }
-      @media (max-width:450px) {    
-      .top {
-        padding: 1rem 2rem;
-    }
-      } */
-
-

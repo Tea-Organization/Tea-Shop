@@ -59,10 +59,10 @@ btnTest.onclick = function () {
     creat("block");
 }
 
+let navbar = document.querySelector('#menu-btn');
+
 document.querySelector('#menu-btn').onclick = () => {
     navbar.classList.toggle('active');
-    searchForm.classList.remove('active');
-    cartItem.classList.remove('active');
 }
 
 pageBtn.onclick = function () {
@@ -72,7 +72,6 @@ pageBtn.onclick = function () {
 pageBtn.onclick = function () {
     pageMenu.classList.toggle("active");
 }
-let navbar = document.querySelector('#menu-btn');
 
 navbar.onclick = () => {
     document.querySelector(".navbar").classList.toggle('active');
