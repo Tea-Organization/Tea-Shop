@@ -25,6 +25,7 @@ window.addEventListener('resize', updateProducts);
 updateProducts();
 
 
+
 // Function to move to the previous set of products
 function previousSlide() {
     const numProductsToShow = window.innerWidth <= 780 ? 1 : (window.innerWidth <= 1230 ? 2 : 3);
@@ -54,18 +55,9 @@ function nextSlide() {
 }
 
 
-
-
-
 // // Adding event listeners to the slider buttons
 preSliderBtn.addEventListener('click', () => {  previousSlide(); });
 nextSliderBtn.addEventListener('click', () => {  nextSlide(); });
-
-
-
-
-
-
 
 
 // Start the slider

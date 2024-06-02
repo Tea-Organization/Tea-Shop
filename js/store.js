@@ -5,6 +5,10 @@ let navBar = document.querySelector(".top");
 let pageBtn = document.querySelector(".pageBtn");
 let pageMenu = document.querySelector(".pageMenu");
 
+pageMenu.onclick = function(){
+
+}
+
 window.onscroll = function () {
     if (window.scrollY >= 300) {
         btn.style.display = "flex";
@@ -17,8 +21,11 @@ window.onscroll = function () {
         navBar.style.cssText = "box-shadow: 0px 0px 0px #fff";
     }
 }
-btn.onclick = function () {
-    window.scrollTo(
+
+
+btn.onclick = async function () {
+
+    await window.scrollTo(
         { top: 0, left: 0, behavior: "smooth" }
     );
 };
@@ -33,12 +40,14 @@ let p = document.querySelector(".product .box-container .box h3");
 
 let productArray;
 let copyProduct;
+
 fetch('https://fakestoreapi.com/products')
     .then(res => res.json())
     .then(function (json) {
         productArray = json;
         return json
     });
+    
 function creat(display = "none") {
     let pr = productArray;
     console.log(pr);
@@ -59,21 +68,11 @@ btnTest.onclick = function () {
     creat("block");
 }
 
+
 let navbar = document.querySelector('#menu-btn');
-
-document.querySelector('#menu-btn').onclick = () => {
-    navbar.classList.toggle('active');
-}
-
-pageBtn.onclick = function () {
-    pageMenu.classList.toggle("active");
-}
-
-pageBtn.onclick = function () {
-    pageMenu.classList.toggle("active");
-}
 
 navbar.onclick = () => {
     document.querySelector(".navbar").classList.toggle('active');
 
 }
+

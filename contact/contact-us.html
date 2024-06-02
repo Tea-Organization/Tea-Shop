@@ -1,199 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel="stylesheet" href="../style/nav_bar_footer.css" />
-    <link rel="stylesheet" href="../css/contact-styles.css" />
-    <title>Contact Us</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
-  <body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="../style/nav_bar_footer.css" />
+  <link rel="stylesheet" href="../css/contact-styles.css" />
+  <link rel="stylesheet" href="../style/store_style.css">
+  <title>Contact Us</title>
+</head>
 
-     <!-- start navBar section -->
-     <header class="top">
-      <a href="index.html" class="teaLogo">
-          <img src="../images/logo.png" alt="logo">
-      </a>
+<body>
 
-      <nav class="navbar">
-          <a href="../index.html">home</a>
-          <a href="../pages/about.html">about</a>
-          <a href="../pages/products.html">products</a>
-          <a href="../pages/store.html">store</a>
-          <a href="#pages" class="pageBtn">pages</a>
-          <a href="contact/contact-us.html">contact</a>
-      </nav>
-      <div class="pageMenu">
-          <a href="#">Features</a>
-          <a href="#">Blog Article</a>
-          <a href="#">Testimonial</a>
-          <a href="#">404 page</a>
-      </div>
+  <!-- start navBar section -->
+  <header class="top">
+    <a href="index.html" class="teaLogo">
+      <img src="../images/logo.png" alt="logo">
+    </a>
 
-      <div class="icons">
-          <div class="fas fa-search" id="search-btn"></div>
-          <div class="fas fa-bars" id="menu-btn"></div>
-      </div>
+    <nav class="navbar">
+      <a href="../index.html">home</a>
+      <a href="../pages/about.html">about</a>
+      <a href="../pages/products.html">products</a>
+      <a href="../pages/store.html">store</a>
+      <a href="#pages" class="pageBtn">pages</a>
+      <a href="contact-us.html">contact</a>
+    </nav>
+    <div class="pageMenu">
+      <a href="#">Features</a>
+      <a href="#">Blog Article</a>
+      <a href="#">Testimonial</a>
+      <a href="#">404 page</a>
+    </div>
 
-     </header>
-     <!-- End navBar section -->
+    <div class="icons">
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
 
-    <div class="page-header">
-      <div class="bgcontainer">
-        <div class="title">
-          <h1>Contact Us</h1>
+  </header>
+  <!-- End navBar section -->
+  <!-- start header section -->
+  <div class="sizeBox"></div>
+  <section class="header">
+    <div class="content">
+      <h3>Contact Us</h3>
+      <p>Home / Pages / <span>Contact</span> </p>
+    </div>
+  </section>
+
+
+  <div class="below-container">
+    <div class="b-title">
+      <p>Contact Us</p>
+    </div>
+    <div class="qoute">
+      <p>If You Have Any Query, Please Contact Us</p>
+    </div>
+    <div class="line">
+      <div class="lineOne"></div>
+      <div class="dote"></div>
+      <div class="lineOne"></div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="contact-us">
+      <div class="contact-box">
+        <div class="logo-container">
+          <i href="#" class="fa fa-envelope"></i>
         </div>
-        <div class="bar">
-          <ol class="list">
-            <li><a href="#">Home / </a></li>
-            <li><a href="#">Pages / </a></li>
-            <li><a href="#">Contact </a></li>
-          </ol>
+        <div>
+          <p>info@example.com</p>
+          <p>support@example.com</p>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <div class="logo-container">
+          <i href="#" class="fa fa-phone-alt"></i>
+        </div>
+        <div>
+          <p>+0123456789</p>
+          <p>+0123456789</p>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <div class="logo-container">
+          <i href="#" class="fa fa-map-marker-alt"></i>
+        </div>
+        <div>
+          <p>123 street</p>
+          <p>new york , USA</p>
         </div>
       </div>
     </div>
 
-    <div class="below-container">
-      <div class="b-title">
-        <p>Contact Us</p>
+    <div class="form">
+      <div class="form-box">
+        <form>
+          <input type="text" id="name" name="name" placeholder="Your name"  />
+          <br />
+          <input type="text" id="email" name="email" placeholder="Your email"  />
+          <br />
+          <input type="text" id="subject" name="subject" placeholder="subject"  />
+          <br />
+          <textarea id="message" name="message" placeholder="message" ></textarea>
+          <button onclick="submitBtn()" type="button" id="btnOne" >Send Message</button>
+        </form>
       </div>
-      <div class="qoute">
-        <h2>If You Have Any Query, Please Contact Us</h2>
+
+      <div class="form-box">
+        <div id="map"></div>
       </div>
     </div>
+  </div>
 
-    <div class="container">
-      <div class="contact-us">
-        <div class="contact-box">
-          <div class="logo-container">
-            <i href="#" class="fa fa-envelope"></i>
-          </div>
-          <div>
-            <p>info@example.com</p>
-            <p>support@example.com</p>
-          </div>
-        </div>
 
-        <div class="contact-box">
-          <div class="logo-container">
-            <i href="#" class="fa fa-phone-alt"></i>
-          </div>
-          <div>
-            <p>+0123456789</p>
-            <p>+0123456789</p>
-          </div>
-        </div>
+  <!-- start floating btn -->
+  <a class="floatingBtn" href="#"><i class='fas fa-angle-up' style='font-size:24px'></i></a>
+  <!-- end floating btn -->
 
-        <div class="contact-box">
-          <div class="logo-container">
-            <i href="#" class="fa fa-map-marker-alt"></i>
-          </div>
-          <div>
-            <p>123 street</p>
-            <p>new york , USA</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="form">
-        <div class="form-box">
-          <form>
-            <input type="text" id="name" name="name" placeholder="Your name" />
-            <br />
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Your email"
-            />
-            <br />
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="subject"
-            />
-            <br />
-            <textarea
-              id="message"
-              name="message"
-              placeholder="message"
-            ></textarea>
-            <button type="submit" id="btn">Send Message</button>
-          </form>
-        </div>
-
-        <div class="form-box">
-          <div id="map"></div>
-        </div>
+  <!-- start footer section -->
+  <section class="footer">
+    <div class="ourOffice">
+      <h3>our office</h3>
+      <p>
+        <a href="#" class="fa fa-map-marker-alt"></a>
+        amman,jordan
+      </p>
+      <p>
+        <a href="#" class="fa fa-phone-alt"></a>+962786996089
+      </p>
+      <p>
+        <a href="#" class="fa fa-envelope"> </a>abukarakiomar@gmail.com
+      </p>
+      <div class="shar">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-youtube"></a>
+        <a href="#" class="fab fa-linkedin"></a>
       </div>
     </div>
+    <div class="quickLinks">
+      <h3>quick links</h3>
+      <p><a href="#" class="fas fa-angle-right"></a>About Us</p>
+      <p><a href="#" class="fas fa-angle-right"></a>Contact Us</p>
+      <p><a href="#" class="fas fa-angle-right"></a>Our Services</p>
+      <p><a href="#" class="fas fa-angle-right"></a>Terms & Condition</p>
+      <p><a href="#" class="fas fa-angle-right"></a>Support</p>
+    </div>
+    <div class="businessH">
+      <h3>Business Hours</h3>
+      <h4>Monday - Friday</h4>
+      <p>09:00 am - 07:00 pm</p>
+      <h4>Saturday</h4>
+      <p>09:00 am - 07:00 pm</p>
+      <h4>Sunday</h4>
+      <p>Closed</p>
 
-     <!-- start footer section -->
-     <section class="footer">
-      <div class="ourOffice">
-          <h3>our office</h3>
-          <p>
-              <a href="#" class="fa fa-map-marker-alt"></a>
-              amman,jordan
-          </p>
-          <p>
-              <a href="#" class="fa fa-phone-alt"></a>+962786996089
-          </p>
-          <p>
-              <a href="#" class="fa fa-envelope"> </a>abukarakiomar@gmail.com
-          </p>
-          <div class="shar">
-              <a href="#" class="fab fa-facebook"></a>
-              <a href="#" class="fab fa-twitter"></a>
-              <a href="#" class="fab fa-youtube"></a>
-              <a href="#" class="fab fa-linkedin"></a>
-          </div>
+    </div>
+    <div class="newsletter">
+      <h3>newsletter</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, temporibus.</p>
+      <div class="emailField">
+        <input type="text" placeholder="your email">
+        <button>signUp</button>
       </div>
-      <div class="quickLinks">
-          <h3>quick links</h3>
-          <p><a href="#" class="fas fa-angle-right"></a>About Us</p>
-          <p><a href="#" class="fas fa-angle-right"></a>Contact Us</p>
-          <p><a href="#" class="fas fa-angle-right"></a>Our Services</p>
-          <p><a href="#" class="fas fa-angle-right"></a>Terms & Condition</p>
-          <p><a href="#" class="fas fa-angle-right"></a>Support</p>
-      </div>
-      <div class="businessH">
-          <h3>Business Hours</h3>
-          <h4>Monday - Friday</h4>
-          <p>09:00 am - 07:00 pm</p>
-          <h4>Saturday</h4>
-          <p>09:00 am - 07:00 pm</p>
-          <h4>Sunday</h4>
-          <p>Closed</p>
-
-      </div>
-      <div class="newsletter">
-          <h3>newsletter</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, temporibus.</p>
-          <div class="emailField">
-              <input type="text" placeholder="your email">
-              <button>signUp</button>
-          </div>
-      </div>
+    </div>
   </section>
   <!-- end footer section -->
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-    <script src="../js/contact-script.js"></script>
-  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="../js/contact-script.js"></script>
+  <script src="../js/nav_bar.js"></script>
+</body>
+
 </html>
